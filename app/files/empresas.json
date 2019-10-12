@@ -1,0 +1,198 @@
+{
+  "Empresas": [
+    {
+      "Nombre": "Empresa1",
+      "Entorno": [
+        {
+          "Nombre_Entorno": "Desarrollo",
+          "URL_Entorno": "http://www.url1.com",
+          "Usuario_Entorno": "UsuarioDes",
+          "Clave_Entorno": "PassDes",
+          "SAPLogon": {
+            "Usuario_SAP_Logon": "UsuarioSAPE1",
+            "Clave_SAP_Logon": "PassSAPE1"
+          },
+          "VPN": {
+            "Usuario_VPN": "UserVPN",
+            "Clave_VPN": "PassVPN"
+          }
+        },
+        {
+          "Nombre_Entorno": "Preproducción",
+          "URL_Entorno": "http://www.url2.com",
+          "Usuario_Entorno": "UsuarioDes",
+          "Clave_Entorno": "PassDes",
+          "SAPLogon": {
+            "Usuario_SAP_Logon": "UsuarioSAPE1",
+            "Clave_SAP_Logon": "PassSAPE1"
+          },
+          "VPN": {
+            "Usuario_VPN": "UserVPN",
+            "Clave_VPN": "PassVPN"
+          }
+        }
+      ]
+    },
+    {
+      "Nombre": "Empresa2",
+      "Entorno": [
+        {
+          "Nombre_Entorno": "Integración",
+          "URL_Entorno": "http://www.url1.com",
+          "Usuario_Entorno": "UsuarioDes",
+          "Clave_Entorno": "PassDes",
+          "SAPLogon": {
+            "Usuario_SAP_Logon": "UsuarioSAPE1",
+            "Clave_SAP_Logon": "PassSAPE1"
+          },
+          "VPN": {
+            "Usuario_VPN": "UserVPN",
+            "Clave_VPN": "PassVPN"
+          }
+        }
+      ]
+    },
+    {
+      "Nombre": "Empresa3",
+      "Entorno": [
+        {
+          "Nombre_Entorno": "Producción",
+          "URL_Entorno": "http://www.url1.com",
+          "Usuario_Entorno": "UsuarioDes",
+          "Clave_Entorno": "PassDes",
+          "SAPLogon": {
+            "Usuario_SAP_Logon": "UsuarioSAPE1",
+            "Clave_SAP_Logon": "PassSAPE1"
+          },
+          "VPN": {
+            "Usuario_VPN": "UserVPN",
+            "Clave_VPN": "PassVPN"
+          }
+        }
+      ]
+    },
+    {
+      "Nombre": "Empresa4",
+      "Entorno": [
+        {
+          "Nombre_Entorno": "Producción",
+          "URL_Entorno": "http://www.url1.com",
+          "Usuario_Entorno": "UsuarioDes",
+          "Clave_Entorno": "PassDes",
+          "SAPLogon": {
+            "Usuario_SAP_Logon": "UsuarioSAPE1",
+            "Clave_SAP_Logon": "PassSAPE1"
+          },
+          "VPN": {
+            "Usuario_VPN": "UserVPN",
+            "Clave_VPN": "PassVPN"
+          }
+        },
+        {
+          "Nombre_Entorno": "Producción",
+          "URL_Entorno": "http://www.url1.com",
+          "Usuario_Entorno": "UsuarioDes",
+          "Clave_Entorno": "PassDes",
+          "SAPLogon": {
+            "Usuario_SAP_Logon": "UsuarioSAPE1",
+            "Clave_SAP_Logon": "PassSAPE1"
+          },
+          "VPN": {
+            "Usuario_VPN": "UserVPN",
+            "Clave_VPN": "PassVPN"
+          }
+        },
+        {
+          "Nombre_Entorno": "Producción",
+          "URL_Entorno": "http://www.url1.com",
+          "Usuario_Entorno": "UsuarioDes",
+          "Clave_Entorno": "PassDes",
+          "SAPLogon": {
+            "Usuario_SAP_Logon": "UsuarioSAPE1",
+            "Clave_SAP_Logon": "PassSAPE1"
+          },
+          "VPN": {
+            "Usuario_VPN": "UserVPN",
+            "Clave_VPN": "PassVPN"
+          }
+        }
+      ]
+    },
+    {
+      "Nombre": "Empresa5",
+      "Entorno": [
+        {
+          "Nombre_Entorno": "Producción",
+          "URL_Entorno": "http://www.url1.com",
+          "Usuario_Entorno": "UsuarioDes",
+          "Clave_Entorno": "PassDes",
+          "SAPLogon": {
+            "Usuario_SAP_Logon": "UsuarioSAPE1",
+            "Clave_SAP_Logon": "PassSAPE1"
+          },
+          "VPN": {
+            "Usuario_VPN": "UserVPN",
+            "Clave_VPN": "PassVPN"
+          }
+        }
+      ]
+    },
+    {
+      "Nombre": "Empresa6",
+      "Entorno": [
+        {
+          "Nombre_Entorno": "Producción",
+          "URL_Entorno": "http://www.url1.com",
+          "Usuario_Entorno": "UsuarioDes",
+          "Clave_Entorno": "PassDes",
+          "SAPLogon": {
+            "Usuario_SAP_Logon": "UsuarioSAPE1",
+            "Clave_SAP_Logon": "PassSAPE1"
+          },
+          "VPN": {
+            "Usuario_VPN": "UserVPN",
+            "Clave_VPN": "PassVPN"
+          }
+        }
+      ]
+    },
+     {
+      "Nombre": "Empresa5",
+      "Entorno": [
+        {
+          "Nombre_Entorno": "Producción",
+          "URL_Entorno": "http://www.url1.com",
+          "Usuario_Entorno": "UsuarioDes",
+          "Clave_Entorno": "PassDes",
+          "SAPLogon": {
+            "Usuario_SAP_Logon": "UsuarioSAPE1",
+            "Clave_SAP_Logon": "PassSAPE1"
+          },
+          "VPN": {
+            "Usuario_VPN": "UserVPN",
+            "Clave_VPN": "PassVPN"
+          }
+        }
+      ]
+    },
+    {
+      "Nombre": "Empresa6",
+      "Entorno": [
+        {
+          "Nombre_Entorno": "Producción",
+          "URL_Entorno": "http://www.url1.com",
+          "Usuario_Entorno": "UsuarioDes",
+          "Clave_Entorno": "PassDes",
+          "SAPLogon": {
+            "Usuario_SAP_Logon": "UsuarioSAPE1",
+            "Clave_SAP_Logon": "PassSAPE1"
+          },
+          "VPN": {
+            "Usuario_VPN": "UserVPN",
+            "Clave_VPN": "PassVPN"
+          }
+        }
+      ]
+    }
+  ]
+}

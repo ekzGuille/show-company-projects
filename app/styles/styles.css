@@ -1,0 +1,74 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#app {
+  padding: 5%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.company {
+  width: 30%;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #a6acaf;
+  display: flex;
+  flex-direction: column;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border: 2px solid #000;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.company-header {
+  background-color: #a6acaf;
+}
+
+.company-header:hover {
+  cursor: pointer;
+}
+
+.env-name {
+  background-color: #e6e9eb;
+}
+
+.env-name:hover {
+  cursor: pointer;
+}
+
+.company-info {
+  background: #fff;
+}
+
+.data-wrapper {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.data-key {
+}
+
+.link-class {
+  text-decoration: none;
+}
+
+.data-value {
+  font-weight: bold;
+}
+
+.bordered {
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+}
+
+.collapse {
+  display: none;
+}
