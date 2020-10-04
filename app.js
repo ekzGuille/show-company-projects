@@ -5,6 +5,45 @@ const getFileData = async () => {
   return rawFile.json();
 };
 
+const printElements = (element) => Object.keys(element).map((key) => {
+  if (typeof element[key] === 'string') {
+    const wrapperDataDiv = document.createElement('div');
+    wrapperDataDiv.setAttribute('class', 'data-wrapper');
+    if (key !== 'Nombre_Entorno') {
+      if (/url/gi.exec(key)) {
+        const pKey = document.createElement('p');
+        pKey.setAttribute('class', 'data-key');
+        pKey.textContent = `${key.replace(/[_]+/gi, ' ')}:`;
+        const pWrap = document.createElement('p');
+
+        const aValue = document.createElement('a');
+        aValue.setAttribute('class', 'data-value');
+        aValue.textContent = element[key];
+        aValue.href = element[key];
+        aValue.target = '_blank';
+        aValue.setAttribute('rel', 'noopener noreferrer nofollow');
+        aValue.setAttribute('class', 'link-class');
+        wrapperDataDiv.appendChild(pKey);
+        pWrap.appendChild(aValue);
+        wrapperDataDiv.appendChild(pWrap);
+      } else {
+        const pKey = document.createElement('p');
+        pKey.setAttribute('class', 'data-key');
+        pKey.textContent = `${key.replace(/[_]+/gi, ' ')}:`;
+
+        const pValue = document.createElement('p');
+        pValue.setAttribute('class', 'data-value');
+        pValue.textContent = element[key];
+        wrapperDataDiv.appendChild(pKey);
+        wrapperDataDiv.appendChild(pValue);
+      }
+    }
+    return wrapperDataDiv;
+  }
+  return printElements(element[key]);
+}).flat();
+
+
 (async () => {
   const { Empresas } = await getFileData();
   Empresas.forEach((company) => {
@@ -62,41 +101,3 @@ const getFileData = async () => {
     app.appendChild(companyDiv);
   });
 })();
-
-const printElements = (element) => Object.keys(element).map((key) => {
-  if (typeof element[key] === 'string') {
-    const wrapperDataDiv = document.createElement('div');
-    wrapperDataDiv.setAttribute('class', 'data-wrapper');
-    if (key !== 'Nombre_Entorno') {
-      if (/url/gi.exec(key)) {
-        const pKey = document.createElement('p');
-        pKey.setAttribute('class', 'data-key');
-        pKey.textContent = `${key.replace(/[_]+/gi, ' ')}:`;
-        const pWrap = document.createElement('p');
-
-        const aValue = document.createElement('a');
-        aValue.setAttribute('class', 'data-value');
-        aValue.textContent = element[key];
-        aValue.href = element[key];
-        aValue.target = '_blank';
-        aValue.setAttribute('rel', 'noopener noreferrer nofollow');
-        aValue.setAttribute('class', 'link-class');
-        wrapperDataDiv.appendChild(pKey);
-        pWrap.appendChild(aValue);
-        wrapperDataDiv.appendChild(pWrap);
-      } else {
-        const pKey = document.createElement('p');
-        pKey.setAttribute('class', 'data-key');
-        pKey.textContent = `${key.replace(/[_]+/gi, ' ')}:`;
-
-        const pValue = document.createElement('p');
-        pValue.setAttribute('class', 'data-value');
-        pValue.textContent = element[key];
-        wrapperDataDiv.appendChild(pKey);
-        wrapperDataDiv.appendChild(pValue);
-      }
-    }
-    return wrapperDataDiv;
-  }
-  return printElements(element[key]);
-}).flat();
