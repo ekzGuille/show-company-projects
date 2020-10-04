@@ -1,6 +1,6 @@
-# PROYECTO
+# POC Listado credenciales
 
-## Listado de empresas
+## Objeto input *(json)*
 
 * Empresa *`Object`*
   * Nombre *`String`*
