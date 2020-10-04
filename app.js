@@ -33,6 +33,9 @@ const printElements = (element) => Object.keys(element).map((key) => {
 
         const pValue = document.createElement('p');
         pValue.setAttribute('class', 'data-value');
+        if (key.startsWith('Clave_')) {
+          pValue.classList.add('password');
+        }
         pValue.textContent = element[key];
         wrapperDataDiv.appendChild(pKey);
         wrapperDataDiv.appendChild(pValue);

@@ -53,8 +53,6 @@ body {
   justify-content: space-around;
 }
 
-.data-key {
-}
 
 .link-class {
   text-decoration: none;
@@ -62,6 +60,14 @@ body {
 
 .data-value {
   font-weight: bold;
+}
+
+.password {
+  opacity: 0;
+}
+
+.password:hover {
+  opacity: 1;
 }
 
 .bordered {
