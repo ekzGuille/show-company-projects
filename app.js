@@ -1,7 +1,7 @@
 const app = document.querySelector('#app');
 
 const getFileData = async () => {
-  const rawFile = await fetch('./../files/empresas.json');
+  const rawFile = await fetch('./empresas.json');
   return rawFile.json();
 };
 
